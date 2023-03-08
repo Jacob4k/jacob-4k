@@ -57,5 +57,5 @@ button {
 }
 
 header :hover {
-    transform: skew(20deg, 5deg);
+    transform: scale(0.75);
 }
