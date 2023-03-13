@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background: #000;
+    box-shadow: 0 0 50px #0ef;
+    padding: 40px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.wrapper:hover{
+    animation: animate 1s linear infinite;
+}
+
+@keyframes animate{
+    100%
+    {
+        filter: hue-rotate(360deg );
+    }
+}
+
+
+.home P{
+    color: #fff;
+    font-weight: 500;
+    font-size: 30PX;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    border: 1px solid;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 0 0 50px red;
+    border: transparent;
+}
+
+img{
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+
+
+.signUp-link{
+    font-size: 14px;
+    text-align: center;
+    margin: 15px 0;
+    padding-top: 30px;
+}
+
+p {
+    color: #fff;
+}
+
+.signUp-link p a {
+    color: #0ef;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.signUp-link p a:hover{
+    text-decoration: underline;
+
+}
+
+
+.form-wrapper{
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease-in-out;
+}
+
+.wrapper.active .form-wrapper.home{
+    transform: translateY(-450px);
+}
+
+.form-wrapper.navi{
+    position: absolute;
+    top: 500px;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper.active .form-wrapper.navi{
+    transform: translateY(-450px);
+}
+
+.form-wrapper.navi a{
+    color: #fff;
+    font-weight: 500;
+    font-size: 25PX;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    border: 1px solid;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 0 0 50px red;
+    border: transparent;
+    text-decoration: none;
+    box-sizing: border-box;
+    width: 400px;
+    
+}
+
+.form-wrapper.navi a:hover{
+    text-decoration: underline;
+}
