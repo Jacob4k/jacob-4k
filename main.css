@@ -20,6 +20,22 @@ header{
    margin-left: 20%;
    border-radius: 100px;
    border: 1px solid;
+   transform: translateX(0px);
+   animation: float 2s ease-out infinite;
+}
+
+@keyframes float {
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-60px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
 }
 
 .about{
@@ -151,6 +167,7 @@ header{
     font-size: 20px;
     margin-top: 10px;
     color: #580EF6;
+    padding-bottom: 30px;
 }
 
 .sec1{
@@ -194,4 +211,17 @@ header{
     padding-left: 10px;
     padding-right: 10px;
     margin-top: 10px;
+}
+
+.login p a{
+    display: grid;
+    place-items: center;
+    border-radius: 20px;
+    margin-top: 20px;
+    border: 1px solid;
+    border-color: blue;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    padding-top: 5px, 5px, 5px, 5px;
 }
